@@ -441,7 +441,7 @@ justify-content: flex-start;
 
 .card1:hover {
   cursor: pointer;
-  scale:2;
+  scale:1.2;
   background-color: #0509fa;
 }
 
@@ -451,7 +451,7 @@ justify-content: flex-start;
 
 .card2:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale:1.2;
   background-color: #1877f2;
 }
 
@@ -461,7 +461,7 @@ justify-content: flex-start;
 
 .card3:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale:1.2;
   background-color: #00ff00;
 }
 
@@ -471,7 +471,7 @@ justify-content: flex-start;
 
 .card4:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale:1.2;
  
   background-color: #d400ff;
 }
