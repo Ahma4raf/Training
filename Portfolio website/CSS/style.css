@@ -1,0 +1,534 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+ 
+  color: white;
+ 
+  
+
+background: linear-gradient(to bottom, #0c0c0c, #0c0c0c)
+
+  
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+nav .menu a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.555);
+margin: 0 10px;
+}
+
+
+ .menu a:after{
+  content: "";
+  position: absolute;
+  background-color: orange;
+  height: 3px;
+  width: 0;
+  left: 0;
+bottom: -10px;
+transition: all 0.3s;
+
+
+}
+.menu a:hover
+{
+  color: white;
+}
+.menu a:hover::after{
+  width: 100%;
+border-radius: 10px;
+
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 10px 150px 40px;
+  margin-bottom: 250px;
+}
+a {
+  color: white;
+}
+.menu{
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  
+  padding: 0px 20px;
+  font-size: 19px;
+
+}
+.myname a {
+  font-size: 30px;
+}
+
+
+
+
+
+
+.bioSection{
+display: flex;
+position: relative;
+
+height: 87vh;
+}
+.bio{
+  margin-top: 100px;
+}
+.bio h1{
+  margin-left: 40px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  
+
+}
+.bio h4{
+  margin-left: 40px;
+  font-size: 20px;
+
+  font-weight: 200;
+color: orange;
+}
+.bio h5{
+  margin-left: 40px;
+  font-size: 20px;
+  color: orange;
+  font-weight: 200;
+
+}
+
+
+.myImg img{
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: 50px;
+  border-radius: 50%;
+}
+.skillSection{
+  height: 100vh;
+}
+.skillSection h1{
+  font-size: 80px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.skillSection ul li{
+  font-size: 30px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: orange;
+}
+.talk {
+  margin-left: 50px;
+
+  width: 50%;
+}
+.talk p{
+  font-weight: 200;
+  color:orange
+}
+.display {
+  display: flex;
+  position: relative;
+  justify-content: 
+  space-between;
+}
+.imgs{
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+.imgs img{
+  width: 150px;
+}
+.imgs .trans{
+  position: absolute;
+  width: 350px;
+  z-index: -1;
+  top:-200px;
+  right: 600px;
+  opacity: 0.1;
+}
+.imgs .Html{
+  position: relative;
+  top: 30px;
+ width: 200px;
+
+
+
+
+
+}
+.imgs .js{
+  position: relative;
+  top: -200px;
+
+}
+
+
+
+.projectsSection {
+ height: 100vh;
+;
+}
+
+
+
+.projectsSection h1{
+  text-align: center;
+  margin-bottom: 250px;
+  font-size: 80px;
+}
+.projectsSection .projects{
+  display: flex;
+  justify-content: space-around;
+
+
+}
+.projectsSection .projects img{
+width: 300px;
+border-radius: 2%;
+transition: all 1s;
+  
+}.projectsSection .projects h2{
+font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.projectsSection .projects img:hover{
+  width: 400px;
+  border-radius: 2%;
+}  
+
+
+ .about1 h1{
+text-align: center
+;
+margin: 50px 0;
+}
+.Cv{
+  display: flex;
+
+justify-content: flex-start;
+
+}
+.Cv h1{
+  margin: 50px 50px;
+}
+.Button-dw{
+  position: relative;
+  top: 50px;
+  
+}
+.ab{
+  display: block;
+}
+
+.Contact{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact1{
+  display: flex;
+  
+}
+
+
+.contact1 h1{
+  position: relative;
+  top: 70px;
+  margin-right: 50px;
+}
+
+.main{
+  margin-right: 50px;
+}
+
+
+
+
+
+
+.Btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+}
+
+.svgIcon {
+  fill: rgb(214, 178, 255);
+}
+
+.icon2 {
+  width: 18px;
+  height: 5px;
+  border-bottom: 2px solid rgb(182, 143, 255);
+  border-left: 2px solid rgb(182, 143, 255);
+  border-right: 2px solid rgb(182, 143, 255);
+}
+
+.tooltip {
+  position: absolute;
+  right: -105px;
+  opacity: 0;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(12, 12, 12);
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  left: -5%;
+  transition-duration: .3s;
+}
+
+.Btn:hover .tooltip {
+  opacity: 1;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  background-color: rgb(150, 94, 255);
+  transition-duration: .3s;
+}
+
+.Btn:hover .icon2 {
+  border-bottom: 2px solid rgb(235, 235, 235);
+  border-left: 2px solid rgb(235, 235, 235);
+  border-right: 2px solid rgb(235, 235, 235);
+}
+
+.Btn:hover .svgIcon {
+  fill: rgb(255, 255, 255);
+  animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: rgb(24, 23, 23);
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #ffffff;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: rgb(24, 23, 23);
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: rgb(24, 23, 23);
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.whatsapp {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+  fill: #00ff00;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: rgb(24, 23, 23);
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.gmail {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #ffffff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale:2;
+  background-color: #0509fa;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+ 
+  background-color: #d400ff;
+}
+
+.card4:hover .gmail {
+  fill: white;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #e8e8e8;
+  z-index: 1;
+  background: #212121;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;}
+ 
+ .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #e8e8e8;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.27);
+  transition: all 250ms
+}
+ 
+ .btn:hover  {
+  color: #212121;
+}
+ .btn:hover::before {
+  width: 100%;
+}
+.skillSection{
+  scroll-behavior: smooth;
+}
+.btnn{
+  border: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: rgb(255, 187, 0);
+  right: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  display: none;
+}
